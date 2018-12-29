@@ -1,0 +1,38 @@
+<html>
+
+<head>
+	<title>Contacs</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+	<div>
+		<h3>Contact Form</h3>
+		<form>
+			<span>Type</span>
+			<select id="type" name="type">
+				<option></option>
+				<option value="1">Person</option>
+				<option value="2">Company</option>
+			</select>
+			<span id="validationTypeMessage" style="display:none">Please Select Type</span>
+			<span>First Name</span>
+			<input type="text" id="fName">
+			<span id="validationFirstNameMessage" style="display:none">Please Fill First Name</span>
+			<span>Last Name</span>
+			<input type="text" id="lName">
+			<span id="validationLastNameMessage" style="display:none">Please Fill Last Name</span>
+			<span>Company</span>
+			<select id="Company" name="Company">
+				<option></option>
+				<option value="1">Mahan Company</option>
+				<option value="2">Ali Baba Company</option>
+			</select>
+			<span id="validationCompanyMessage" style="display:none">You Can Select Company For Only Person</span>
+			<input type="button" value="Add" id="add" onclick="validateForm()">
+		</form>
+	</div>
+	<script src="app.js"></script>
+</body>
+
+</html>
